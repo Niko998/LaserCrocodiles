@@ -1,0 +1,15 @@
+<div *ngIf="!crocNameClicked; else named">
+<p>Name your crocodile</p>
+<input 
+type = text
+class = "form-control"
+[(ngModel)]="crocName">
+<button (click)="onNameingCroc()" class="btn btn-primary">Name it</button>
+</div>
+<ng-template #named>
+    <p>You created {{crocName}}!</p>
+    <button (click)="crocNameClicked=false">Name new</button>
+</ng-template>
+<h2>Your crocs list:</h2>
+<p style="margin: 3px;"  *ngFor="let croc of crocodiles; let i = index">{{i+1}}. {{croc}}</p>
+

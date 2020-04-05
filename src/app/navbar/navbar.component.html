@@ -1,1 +1,12 @@
-<div><app-shop></app-shop><app-blog></app-blog></div>
+<div><button [ngStyle]="{backgroundColor: getShopColor()}" class="btn btn-info" (click)="onShopClick()">SHOP</button>
+    <button [ngStyle]="{backgroundColor: getBlogColor()}" class="btn btn-info" (click)="onBlogClick()">BLOG</button>
+    <button [ngStyle]="{backgroundColor: getCrocColor()}" class="btn btn-info" (click)="onCrocClick()">CROCODILE</button></div>
+
+<div>
+    
+    <app-shop *ngIf="shopClicked"></app-shop>
+    
+    <app-blog *ngIf="blogClicked"></app-blog>
+    
+    <app-crocodile *ngIf="crocClicked"></app-crocodile>
+</div>
