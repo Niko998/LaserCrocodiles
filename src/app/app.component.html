@@ -1,7 +1,9 @@
-<div class="navbar">
-    <div class="navbar-brand">
-        <a href="#">Laser Crocodiles</a>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="containter">
+    <div class="row">
+      <div class="col-md-12">
+            <app-character *ngIf="loadedFeature === 'character'"></app-character>
+            <app-equipment *ngIf="loadedFeature === 'equipment'"></app-equipment>
+            <app-adventures *ngIf="loadedFeature === 'adventures'"></app-adventures>
     </div>
-</div>
-
-<app-navbar></app-navbar>
+  </div>

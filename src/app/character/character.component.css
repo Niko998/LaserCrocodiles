@@ -1,0 +1,12 @@
+.bigBox {
+
+}
+
+.stats {
+    float: left;
+}
+
+.character {
+    float: right;
+    margin-right: 10vw;
+}

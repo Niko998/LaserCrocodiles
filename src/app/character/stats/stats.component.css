@@ -1,0 +1,13 @@
+.charStats {
+    background-color: lime;
+    width: 350px;
+    margin-left: 9vw;
+    border: solid;
+}
+
+.stat {
+    height: 20px;
+    background-color: yellowgreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

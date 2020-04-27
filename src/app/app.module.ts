@@ -3,28 +3,29 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ShopComponent } from './shop/shop.component';
-import { ProductComponent } from './product/product.component';
-import { BlogComponent } from './blog/blog.component';
-import { ArticleComponent } from './article/article.component';
-import { CrocodileComponent } from './crocodile/crocodile.component';
+import { HeaderComponent } from './header/header.component';
+import { CharacterComponent } from './character/character.component';
+import { AdventuresComponent } from './adventures/adventures.component';
+import { EquipmentComponent } from './equipment/equipment.component';
+import { StatsComponent } from './character/stats/stats.component';
+import { StatsService } from './character/stats/stats.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    ShopComponent,
-    ProductComponent,
-    BlogComponent,
-    ArticleComponent,
-    CrocodileComponent
+    HeaderComponent,
+    CharacterComponent,
+    AdventuresComponent,
+    EquipmentComponent,
+    StatsComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [StatsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

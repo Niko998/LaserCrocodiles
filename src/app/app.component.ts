@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LaserCrocodiles';
+  loadedFeature='character';
+
+  onNavigate(feature: string){
+    console.log("siemanko");
+    this.loadedFeature=feature;
+  }
 }
