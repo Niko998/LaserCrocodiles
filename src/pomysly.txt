@@ -1,9 +1,10 @@
 Todo:
-1. Usunac shop i product
+1. Usunac shop i product done
 Pomysly:
 1. Stworzyc kreator laserowych krokodyli. Z mozliwoscia walki z jakimis losowymi potworkami. 
 Howto:
 1. Character - pole gdzie generujemy krokodyla
-1a. stats - statystki krokodyla
+1a. stats - statystki krokodyla done
 2. Adventures - mozemy wyslac krkokodyla na przygode
 3. Equipment - mozemy wyposazac krokodyla w jakies rzeczy, daje mu to + do statystyk
+4. Routing - dodac Routing 

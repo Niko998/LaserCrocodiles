@@ -9,6 +9,8 @@ import { AdventuresComponent } from './adventures/adventures.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { StatsComponent } from './character/stats/stats.component';
 import { StatsService } from './character/stats/stats.service';
+import { AppRoutingModule } from './app-routing.module';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
@@ -19,11 +21,13 @@ import { StatsService } from './character/stats/stats.service';
     AdventuresComponent,
     EquipmentComponent,
     StatsComponent,
+    WelcomeComponent,
     
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [StatsService],
   bootstrap: [AppComponent]
